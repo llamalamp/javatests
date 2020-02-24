@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Java Test</title>
+    <meta charset="UTF-8"/>
+    </head>
+    <script>
+        //Should add a number to 7
+        function add7 (number) {
+            console.log (number + 7);
+        }
+        add7(10);
+        //Should multiply 2 numbers together
+        function multiply (mnumber, mnumber2) {
+            console.log (mnumber *mnumber2);
+        }
+        multiply(2,500);
+        //added wordIn as global to keep things easy
+        let wordIn = prompt('enter a word');
+        //should capitalize first letter of word input and keep rest lowercase
+        function capitalize () {
+            let cap = wordIn.charAt(0)
+            let wordOut= wordIn.substr(1,400);
+            let captLetter = cap.toUpperCase();
+            let lowerLetter = wordOut.toLowerCase();
+            let finWord = (captLetter+lowerLetter)
+            console.log(finWord)
+        }
+        capitalize ();
+        //should display last letter from wordIn variable
+        function lastLetter () {
+            let finalLetter = wordIn.charAt(wordIn.length-1);
+            console.log (finalLetter) 
+        }
+        lastLetter ();
+    </script>
+
+
+
+</head>
+
+
+</html>
